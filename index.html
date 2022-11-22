@@ -14,7 +14,7 @@
 </head>
 <body>
     <div id="app">
-        <button style="color: red;background-color:aqua" @click="generateMail">Genera</button>
+        <button @click="generateMail">Genera</button>
         <ul v-for="(element, index) in arrMail" :class="(arrMail.length < 10) ? 'none' : 'block'">
             <li>{{ element }}</li>
         </ul>
